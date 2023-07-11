@@ -1,0 +1,599 @@
+
+:root{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+.banner{
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../trial.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-shadow: 0px 4px opx black;
+    
+}
+
+.logo{
+    padding-left: 2rem;
+    width: 120 px;
+    cursor: pointer;
+
+}
+
+
+.navbar ul li {
+    font-size: 1.6rem;
+    list-style: none;
+    display: inline-block;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::before{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::before {
+
+    width: 100%;
+}
+
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+
+
+.content h1{
+    font-size: 7rem;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 1.6rem;
+
+}
+
+
+button{
+    width: 20rem;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 15;
+
+}
+
+
+
+.button-style {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button-style span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100, 8, 5);
+    border-radius: 25px;
+    z-index: -1;
+    left: -100%;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.button-style:hover span {
+    left: 0;
+}
+
+.button-style a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+/*
+span{
+    background-color: rgb(100, 8, 5);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+       
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 20rem;
+    left: 0;
+
+}
+button:hover{
+    border: none;
+}
+
+
+
+*/
+
+.bannermusic{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../musicback.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.bannermov{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../LPmP.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.navbarmusic{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+button:hover{
+    border: none;
+}
+
+
+
+
+.header-card {
+    font-size: 1.6rem;
+    margin-top: 150px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6.5rem;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.socials{
+    width: 100 px;
+    height: 100%;
+    padding-right: 50 px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+
+.instagram {
+    width: 15px;
+    z-index: 20;
+    height: 15px;
+    background-image: url(../Instagram-Icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-right: 2.5rem;
+}
+
+.linkedn {
+    width: 15px;
+    z-index: 20;
+    height: 15px;
+    background-image: url(../linkrenk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20 px;
+}
+
+
+
+
+
+
+
+
+.content-movies{
+    margin-top: 150px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+
+
+.content-movies h1{
+    font-size: 7rem;
+    margin-top: 80px;
+}
+
+.content-movies p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 1.6rem;
+
+}
+
+
+
+
+
+
+.idk{
+    text-align: center;
+    font-size: 7rem;
+    line-height: 50px;
+}
+
+.boxx{
+    height: 25vh;
+    width: 10vh;
+}
+
+
+
+
+
+
+.con {
+    position: relative;
+    top: 100vh;
+    width: 100%;
+    height: 2000px;
+    background-image: url(../pngwing.com.png),url(../giphy.gif);
+    background-size: 80vh;
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
+    z-index: -1;
+    align-items: center; /*dikey orta*/
+    justify-content: center; /*yatay orta*/
+    display: flex;
+}
+.idk{
+    width: 100%;
+}
+
+
+.burgerbutton, .burgermenu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) and (orientation: landscape){
+    
+    .logo{
+        display: none;
+    }
+    
+    
+    .navbar ul li{
+        display: none;
+    }
+    .burgerbutton{
+        display: block;
+        margin-right: 50px;
+        width: 3rem;
+        height: 3rem;
+        background-color: rgb(180, 155, 166);
+        border: 1px solid black;
+        border-radius: 10%;
+        background-image: url(../menu.png), url(../close.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+    .burgermenu{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        background-color: rgb(39, 27, 31);
+    }
+
+    .burgermenu ul{
+        width: 100%;
+        height: calc(100vh - 60px);
+        padding-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;  
+    }
+
+    .burgermenu ul li{
+        flex-basis: 100%;
+        border-top: 2px solid black;
+    }
+
+    .burgermenu ul li a{
+        
+        display: block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 30px 0;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+
+
+
+.navbar ul li {
+    font-size: 1rem;
+}   
+.navbar ul li {
+    font-size: 0.8rem;
+}   
+}
+
+
+@media only screen and (max-width: 600px){
+    
+    
+    .logo{
+        display: none;
+    }
+    
+    
+    .navbar ul li{
+        display: none;
+    }
+    .burgerbutton{
+        display: block;
+        margin-right: 50px;
+        width: 3rem;
+        height: 3rem;
+        background-color: rgb(180, 155, 166);
+        border: 1px solid black;
+        border-radius: 10%;
+        background-image: url(../menu.png), url(../close.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+    .burgermenu{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        background-color: rgb(39, 27, 31);
+    }
+
+    .burgermenu ul{
+        width: 100%;
+        height: calc(100vh - 60px);
+        padding-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;  
+    }
+
+    .burgermenu ul li{
+        flex-basis: 100%;
+        border-top: 2px solid black;
+    }
+
+    .burgermenu ul li a{
+        
+        display: block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 30px 0;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    
+.header-card {
+    font-size: 1rem;
+    
+    height: 5rem;
+}
+
+
+    }
+
+
+    @media only screen and (max-width: 550px){
+    
+        
+    .logo{
+        display: none;
+    }
+    
+    
+    .navbar ul li{
+        display: none;
+    }
+    .burgerbutton{
+        display: block;
+        margin-right: 50px;
+        position: sticky;
+        width: 3rem;
+        height: 3rem;
+        background-color: rgb(180, 155, 166);
+        border: 1px solid black;
+        border-radius: 10%;
+        background-image: url(../menu.png), url(../close.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+    .burgermenu{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        background-color: rgb(39, 27, 31);
+    }
+
+    .burgermenu ul{
+        width: 100%;
+        height: calc(100vh - 60px);
+        padding-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;  
+    }
+
+    .burgermenu ul li{
+        flex-basis: 100%;
+        border-top: 2px solid black;
+    }
+
+    .burgermenu ul li a{
+        
+        display: block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 30px 0;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+        .navbar ul li {
+            font-size: 0.6rem;
+        }   
+    }
+
+
+    section h1{
+        font-size: 4rem;
+        padding-top: 150px;
+        position: relative;
+        left: 0;
+        left: 10%;
+        bottom: 2.5rem;
+        right: 0;
+        color: white;
+    }
+
+    section p{
+        font-size: 2.5rem;
+        position: relative;
+        left: 10%;
+        color: white;
+    }
+
+
+    .deneyim{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        color: #fff;
+        font-size: 2rem;
+        justify-content: center;
+        position: absolute;
+    }
+    .deneyim p{
+        margin-right: 30px;
+    }
+
+    .filler{
+        height: 40vh;
+        width: 100%;
+        position: absolute;
+        top: 100vh;
+        background-image: url(../indir.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+    
+
+    
+
+
+
+
